@@ -29,7 +29,29 @@ function App() {
     
     {/* 메인 배너 */}
     <div className='main-banner'></div>
+
+    {/* 메인 상품 목록 레이아웃 */}
+    <div className="container">
+    <div className="row">
+      <div className="main_book">
+        <img src={process.env.PUBLIC_URL + "/book_1.jpeg"} width="20%" alt="main_book_1"/>
+        <h4>도둑맞은 집중력</h4>
+        <p>집중력 위기의 시대, 삶의 주도권을 되찾는 법</p>
+      </div>
+      <div className="main_book">
+        <img src={process.env.PUBLIC_URL + "/book_2.jpeg"} width="20%" alt="main_book_2"/>
+        <h4>비전공자를 위한 이해할 수 있는 IT 지식</h4>
+        <p>IT시대의 필수 교양서</p>
+      </div>
+      <div className="main_book">
+        <img src={process.env.PUBLIC_URL + "/book_3.jpeg"} width="20%" alt="main_book_3"/>
+        <h4>총균쇠</h4>
+        <p>인간 사회의 운명을 바꾼 힘</p>
+      </div>
     </div>
+  </div> 
+    
+  </div>
   );
 }
 
