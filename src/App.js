@@ -26,6 +26,9 @@ function App() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
+    {/* 메인 배너 */}
+    <div className='main-banner'></div>
     </div>
   );
 }
