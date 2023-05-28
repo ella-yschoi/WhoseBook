@@ -1,25 +1,41 @@
-.App {
-  text-align: center;
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0rem 40rem;
 }
 
 .main-banner {
   height: 300px;
-  background-image: url(/public/kurly.png);
-  background-size: cover;
+  background-image: url(/public/banner_main_1.jpeg);
   background-position: center;
 }
 
-.main_book {
+.main-book {
+  display: flex;
+  flex-wrap: wrap; /* 도서 아이템이 너비를 벗어나면 다음 줄로 이동 */
+  justify-content: center;
+  margin: 0rem 40rem;
+  padding: 1.75rem 0rem;
+  max-width: 60rem;
+}
 
+.main-book > div {
+  flex-basis: calc(25% - 20px); /* 변경: 각 도서 아이템의 너비를 25%로 설정하고 간격을 제외 */
+  margin: .625rem;
+  padding: .625rem;
+  text-align: left;
+}
+
+.main-book img {
+  width: 100%;
+  height: auto;
+}
+
+.main-book h4 {
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.main-book p {
+  margin-top: .3125rem;
+  font-size: .75rem;
+  color: grey;
 }

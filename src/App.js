@@ -5,13 +5,13 @@ import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-    <Navbar bg="light" expand="lg">
+    <div>
+    <Navbar className='App-header'>
       <Container>
         <Navbar.Brand href="#WhoseBook">📖 WhoseBook</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav>
             <Nav.Link href="#home">홈</Nav.Link>
             <Nav.Link href="#best">베스트</Nav.Link>
             <NavDropdown title="카테고리" id="category_drop">
@@ -31,27 +31,29 @@ function App() {
     <div className='main-banner'></div>
 
     {/* 메인 상품 목록 레이아웃 */}
-    <div className="container">
-    <div className="row">
-      <div className="main_book">
-        <img src={process.env.PUBLIC_URL + "/book_1.jpeg"} width="20%" alt="main_book_1"/>
-        <h4>도둑맞은 집중력</h4>
-        <p>집중력 위기의 시대, 삶의 주도권을 되찾는 법</p>
+    <div className="main-book">
+      <div>
+        <img src={process.env.PUBLIC_URL + "/book_main_1.jpeg"} alt="main_book_1"/>
+        <h4>브랜드 마케터들의 이야기</h4>
+        <p>음식, 음악, 여행 그리고 독서</p>
       </div>
-      <div className="main_book">
-        <img src={process.env.PUBLIC_URL + "/book_2.jpeg"} width="20%" alt="main_book_2"/>
-        <h4>비전공자를 위한 이해할 수 있는 IT 지식</h4>
-        <p>IT시대의 필수 교양서</p>
+      <div>
+        <img src={process.env.PUBLIC_URL + "/book_main_2.jpeg"} alt="main_book_2"/>
+        <h4>내 삶의 이야기를 쓰는 법</h4>
+        <p>글쓰기 워크숍을 운영해온 저자의 자전</p>
       </div>
-      <div className="main_book">
-        <img src={process.env.PUBLIC_URL + "/book_3.jpeg"} width="20%" alt="main_book_3"/>
-        <h4>총균쇠</h4>
-        <p>인간 사회의 운명을 바꾼 힘</p>
+      <div>
+        <img src={process.env.PUBLIC_URL + "/book_main_3.jpeg"} alt="main_book_3"/>
+        <h4>더퍼슨스 : 브랜드 디렉터</h4>
+        <p>직업 탐구 인터뷰 네 번째 브랜드 디렉터</p>
+      </div>
+      <div>
+        <img src={process.env.PUBLIC_URL + "/book_main_4.jpeg"} alt="main_book_4"/>
+        <h4>이게 무슨 일이야!</h4>
+        <p>우아한형제들의 일문화이야기</p>
       </div>
     </div>
   </div> 
-    
-  </div>
   );
 }
 
