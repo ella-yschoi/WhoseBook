@@ -1,5 +1,5 @@
 .App-header {
-  margin: 0rem 10%; /* 왼쪽과 오른쪽 여백을 10%로 설정 */
+  margin: 0rem 23%;
 }
 
 .main-banner {
@@ -11,8 +11,8 @@
 .main-book {
   display: flex;
   flex-wrap: wrap; /* 도서 아이템이 너비를 벗어나면 다음 줄로 이동 */
-  justify-content: space-between; /* 도서 아이템을 가로 방향으로 정 가운데에 배치 */
-  margin: 0rem 25%; /* 왼쪽과 오른쪽 여백을 10%로 설정 */
+  justify-content: space-between;
+  margin: 0rem 25%;
   padding: 1.75rem 0rem;
   max-width: 60rem;
 }
