@@ -9,14 +9,14 @@ let ProductData = [
     {
     id : 1,
     title : "내 삶의 이야기를 쓰는 법",
-    content : "글쓰기 워크숍을 운영해온 저자의 자전",
+    content : "나만의 이야기를 어떻게 쓸까",
     price : "11,000원"
     },
 
     {
     id : 2,
     title : "더퍼슨스 : 브랜드 디렉터",
-    content : "직업 탐구 인터뷰 네 번째 브랜드 디렉터",
+    content : "직업 탐구 인터뷰 네 번째",
     price : "15,000원"
     },
     
