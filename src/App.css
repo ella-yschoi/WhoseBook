@@ -1,5 +1,5 @@
 .App-header {
-  margin: 0rem 40rem;
+  margin: 0rem 23%;
 }
 
 .main-banner {
@@ -11,16 +11,15 @@
 .main-book {
   display: flex;
   flex-wrap: wrap; /* 도서 아이템이 너비를 벗어나면 다음 줄로 이동 */
-  justify-content: center;
-  margin: 0rem 40rem;
+  justify-content: space-between;
+  margin: 0rem 25%;
   padding: 1.75rem 0rem;
   max-width: 60rem;
 }
 
-.main-book > div {
-  flex-basis: calc(25% - 20px); /* 변경: 각 도서 아이템의 너비를 25%로 설정하고 간격을 제외 */
-  margin: .625rem;
-  padding: .625rem;
+.main-book div {
+  flex-basis: calc(25% - 20px); /* 각 도서 아이템의 너비를 25%로 설정하고 간격을 제외 */
+  margin: 0.625rem;
   text-align: left;
 }
 
@@ -29,13 +28,19 @@
   height: auto;
 }
 
-.main-book h4 {
+.title {
   margin-top: 1.25rem;
   font-size: 1.125rem;
 }
 
-.main-book p {
-  margin-top: .3125rem;
-  font-size: .75rem;
+.content {
+  margin-bottom: 8px;
+  font-size: 1rem;
   color: grey;
 }
+
+.price {
+  font-size: 0.75rem;
+  color: rgb(8, 123, 70);
+}
+
